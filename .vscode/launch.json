@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--model", "pidinet_tiny_converted",  "--config",  "carv4",  "-j", "4", "--gpu", "0",  "--savedir", "input_output/savedir/table5_pidinet-tiny-l", "--datadir", "input_output/custom_images", "--dataset", "Custom", "--evaluate", "trained_models/table5_pidinet-tiny-l.pth", "--evaluate-converted"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

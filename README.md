@@ -1,3 +1,18 @@
+## 推理
+
+run.sh
+```bash
+conda activate torch
+
+# table5_pidinet
+python main.py --model pidinet_converted --config carv4 --sa --dil -j 4 --gpu 0 --savedir input_output/savedir/table5_pidinet --datadir input_output/custom_images --dataset Custom --evaluate trained_models/table5_pidinet.pth --evaluate-converted
+
+# table5_pidinet-tiny-l
+python main.py --model pidinet_tiny_converted --config carv4 -j 4 --gpu 0 --savedir input_output/savedir/table5_pidinet-tiny-l --datadir input_output/custom_images --dataset Custom --evaluate trained_models/table5_pidinet-tiny-l.pth --evaluate-converted
+```
+
+
+
 # Pixel Difference Convolution
 
 This repository contains the PyTorch implementation for 
